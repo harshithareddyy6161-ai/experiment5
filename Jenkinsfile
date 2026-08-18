@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
+                sh 'ls -la'
                 sh 'javac HelloWorld.java'
             }
         }
